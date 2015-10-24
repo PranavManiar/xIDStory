@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head class="no-skrollr">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>Remote For Stroy of xID</title>
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font: 13px Helvetica, Arial;
+        }
+        
+        .btn-circle {
+            width: 70px;
+            height: 70px;
+            text-align: center;
+            padding: 6px 0;
+            font-size: 12px;
+            line-height: 1.42;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align:center;">Remote For xID Story</h1>
+
+    <br/>
+    <div style="align:center;" class="container">
+        <div style="align:center;">
+
+            <button id="UP" style="font-size:64px;" class="btn btn-primary center-block "> <i class="fa fa-arrow-circle-up"></i> </button>
+        </div>
+        <br/>
+        <div style="align:center;">
+            <button id="DOWN" style="font-size:64px;" class="btn btn-success center-block fa fa-arrow-circle-down"> </button>
+        </div>
+
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/jquery-1.11.1.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script>
+        var socket = io('', {
+            query: 'id=1234'
+        });
+
+        $('#UP').click(function (e) {
+            socket.emit('UP', 'UP');
+            //  socket.emit('chat message', 'Value');
+        });
+
+
+        $('#DOWN').click(function (e) {
+            socket.emit('DOWN', 'DOWN');
+        });
+    </script>
+</body>
+
+</html>
