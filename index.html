@@ -25,118 +25,261 @@
     .content {
         position: absolute;
     }
+    
+    .fullscreen-div {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    
+    .center-admin{
+        left:0;
+        right:0; 
+        bottom: 100px; 
+        margin-left: auto;
+        margin-right: auto; 
+        height:600px;
+        width:500px;
+        position:absolute;
+        display:block;
+        opacity:0; 
+    }
+    
 </style>
 
 
 <body>
 
-    <!--
-    <div class="wrapper" id="employee_entry">
-        <div class="content" style="top:0; left: 0; right: 0; bottom: 0; 
-                                background : #fff url(img/corporate_building.jpg) no-repeat center center ;
-                                    background-size: 20% 30%;" data-0="opacity:0.4;transform: scaleY(1) scaleX(1);" data-300="opacity:0.7;transform: scaleY(3) scaleX(2);" data-700="opacity:1;transform: scaleY(3.3) scaleX(2.5);">
+    <!-- Current Scenario - Manual One -->
+    <div class="wrapper " id="manual-screen">
+        <div class="content fullscreen-div" style="background-color:#96aeb0; ">
+            
+            <h1 data-0="opacity:1;display:block;" data-2250="opacity:0;display:none;"> Current Process </h1>
+            <!-- Admin 1-->
+            <div id="admin1">
+                <img class="center-admin"
+                     src="img/admin1.png" 
+                     data-_adminfirst-0="opacity:0.4; transform: scaleX(0.4) scaleY(0.4); display:block;" 
+                     data-_adminfirst-200="opacity:0.7; transform: scaleX(0.7) scaleY(0.7); " 
+                     data-_adminfirst-400="opacity:1; transform: scaleX(1) scaleY(1); " 
+                     data-_adminfirst-700="opacity:1;" 
+                     data-_adminfirst-740="opacity:0;">
+
+                <img class="content" 
+                     src="img/hr_paper.png" 
+                     style="bottom:0px;left:0px; " 
+                     data-_adminfirst-0="transform:translate(0em,0em);opacity : 1; "
+                     data-_adminfirst-200="transform: translate(20em,-3em);opacity : 1; " 
+                     data-_adminfirst-400="transform: translate(30em,-7em);opacity :1; " 
+                     data-_adminfirst-480="transform: translate(30em,-7em);opacity : 1; " 
+                     data-_adminfirst-500="transform: translate(30em,-7em);opacity : 0; " 
+                     data-_adminfirst-740="transform: translate(30em,-7em);opacity:0; ">
+
+                <img class="content" 
+                     src="img/hr_front.png " 
+                     style="bottom:0px;;left:0px; opacity:0;" 
+                     data-_adminfirst-0="opacity:0; " 
+                     data-_adminfirst-499="opacity:0; " 
+                     data-_adminfirst-700="opacity:1;" 
+                     data-_adminfirst-500="transform:translate(30em,-7em);opacity :1; " 
+                     data-_adminfirst-740="transform:translate(30em,-7em);opacity:0; ">
+
+                <img class="content" 
+                     src="img/cloud_google.png " 
+                     style="right:0;top:0; width:300px;height:200px;opacity:0;" 
+                     data-_adminfirst-500="opacity:0 " 
+                     data-_adminfirst-600="opacity:0.5 " 
+                     data-_adminfirst-700="opacity:1; " 
+                     data-_adminfirst-740="opacity:0; " />
+            </div>
+
+
+            <!-- Admin 2 -->
+
+            <div id="admin2">
+
+                <img class="center-admin" 
+                     src="img/admin2.png " 
+                     data-_adminsecond-0="opacity:0; " 
+                     data-_adminsecond-0="opacity:0.1; transform: scaleX(0.4) scaleY(0.4); " 
+                     data-_adminsecond-200="opacity:0.7; transform: scaleX(0.7) scaleY(0.7); " 
+                     data-_adminsecond-400="opacity:1; transform: scaleX(1) scaleY(1); "
+                     data-_adminsecond-700="opacity:1;" 
+                     data-_adminsecond-740="opacity:0;">
+
+
+                <img class="content " 
+                     src="img/hr_paper.png " 
+                     style="bottom:0px;left:0px; " 
+                     data-_adminsecond-0="opacity:0; " 
+                     data-_adminsecond-0="transform:translate(0em,0em);opacity : 1; " 
+                     data-_adminsecond-200="transform: translate(20em,-3em);opacity : 1; " 
+                     data-_adminsecond-400="transform: translate(30em,-7em);opacity : 1; " 
+                     data-_adminsecond-500="transform: translate(30em,-7em);opacity : 0; "
+                     data-_adminsecond-500="transform: translate(30em,-7em);opacity : 0; " 
+                     data-_adminsecond-740="transform: translate(30em,-7em);opacity:0; ">
+                
+                
+                <img class="content " 
+                     src="img/hr_front.png " 
+                     style="bottom:0px;;left:0px; opacity:0; " 
+                     data-_adminsecond-0="opacity:0; " 
+                     data-_adminsecond-0="opacity:0; " 
+                     data-_adminsecond-499="opacity:0; " 
+                     data-_adminsecond-500="transform:translate(30em,-7em);opacity :1; "
+                     data-_adminsecond-740="transform:translate(30em,-7em);opacity:0; ">
+
+                <img class="content " 
+                     src="img/cloud_amazon.png " 
+                     style="right:0;top:0; width:300px;height:200px; opacity:0; " 
+                     data-_adminsecond-0="opacity:0; " 
+                     data-_adminsecond-500="opacity:0 " 
+                     data-_adminsecond-600="opacity:0.5 " 
+                     data-_adminsecond-700="opacity:1; " 
+                     data-_adminsecond-740="opacity:0; "/>
+            </div>
+            
+            
+            <!-- Admin 3 -->
+
+            <div id="admin3">
+
+                <img class="center-admin" 
+                     src="img/admin3.png " 
+                     data-_adminthird-0="opacity:0; " 
+                     data-_adminthird-0="opacity:0.1; transform: scaleX(0.4) scaleY(0.4); " 
+                     data-_adminthird-200="opacity:0.7; transform: scaleX(0.7) scaleY(0.7); " 
+                     data-_adminthird-400="opacity:1; transform: scaleX(1) scaleY(1); "
+                     data-_adminthird-700="opacity:1;" 
+                     data-_adminthird-740="opacity:0;">
+
+
+                <img class="content " 
+                     src="img/hr_paper.png " 
+                     style="bottom:0px;left:0px; " 
+                     data-_adminthird-0="opacity:0; " 
+                     data-_adminthird-0="transform:translate(0em,0em);opacity : 1; " 
+                     data-_adminthird-200="transform: translate(20em,-3em);opacity : 1; " 
+                     data-_adminthird-400="transform: translate(30em,-7em);opacity : 1; " 
+                     data-_adminthird-500="transform: translate(30em,-7em);opacity : 0; "
+                     data-_adminthird-500="transform: translate(30em,-7em);opacity : 0; " 
+                     data-_adminthird-740="transform: translate(30em,-7em);opacity:0; ">
+                
+                
+                <img class="content " 
+                     src="img/hr_front.png " 
+                     style="bottom:0px;;left:0px; opacity:0; " 
+                     data-_adminthird-0="opacity:0; " 
+                     data-_adminthird-0="opacity:0; " 
+                     data-_adminthird-499="opacity:0; " 
+                     data-_adminthird-500="transform:translate(30em,-7em);opacity :1; "
+                     data-_adminthird-740="transform:translate(30em,-7em);opacity:0; ">
+
+                <img class="content " 
+                     src="img/cloud_amazon.png " 
+                     style="right:0;top:0; width:300px;height:200px; opacity:0; " 
+                     data-_adminthird-0="opacity:0; " 
+                     data-_adminthird-500="opacity:0 " 
+                     data-_adminthird-600="opacity:0.5 " 
+                     data-_adminthird-700="opacity:1; " 
+                     data-_adminthird-740="opacity:0; "/>
+            </div>
+            
+            <!-- Admin 4 -->
+            <h1 data-2240="opacity:0;" data-2260="opacity:1;"> xID Helps </h1>
+            <div id="admin4">
+
+                <img class="center-admin" 
+                     src="img/admin4.png " 
+                     data-_adminfourth-0="opacity:0; " 
+                     data-_adminfourth-0="opacity:0.1; transform: scaleX(0.4) scaleY(0.4); " 
+                     data-_adminfourth-200="opacity:0.7; transform: scaleX(0.7) scaleY(0.7); " 
+                     data-_adminfourth-400="opacity:1; transform: scaleX(1) scaleY(1); "
+                     data-_adminfourth-700="opacity:1;" 
+                     data-_adminfourth-740="opacity:0;">
+
+
+                <img class="content " 
+                     src="img/hr_paper.png " 
+                     style="bottom:0px;left:0px; " 
+                     data-_adminfourth-0="opacity:0; " 
+                     data-_adminfourth-0="transform:translate(0em,0em);opacity : 1; " 
+                     data-_adminfourth-200="transform: translate(20em,-3em);opacity : 1; " 
+                     data-_adminfourth-400="transform: translate(30em,-7em);opacity : 1; " 
+                     data-_adminfourth-500="transform: translate(30em,-7em);opacity : 0; "
+                     data-_adminfourth-500="transform: translate(30em,-7em);opacity : 0; " 
+                     data-_adminfourth-740="transform: translate(30em,-7em);opacity:0; ">
+                
+                
+                <img class="content " 
+                     src="img/hr_front.png " 
+                     style="bottom:0px;;left:0px; opacity:0; " 
+                     data-_adminfourth-0="opacity:0; " 
+                     data-_adminfourth-0="opacity:0; " 
+                     data-_adminfourth-499="opacity:0; " 
+                     data-_adminfourth-500="transform:translate(30em,-7em);opacity :1; "
+                     data-_adminfourth-740="transform:translate(30em,-7em);opacity:0; ">
+
+                <img class="content " 
+                     src="img/cloud_amazon.png " 
+                     style="right:0;top:0; width:300px;height:200px; opacity:0; " 
+                     data-_adminfourth-0="opacity:0; " 
+                     data-_adminfourth-500="opacity:0 " 
+                     data-_adminfourth-600="opacity:0.5 " 
+                     data-_adminfourth-700="opacity:1; " 
+                     data-_adminfourth-740="opacity:0; "/>
+                
+                
+                <img class="content" 
+                     src="img/cloud_google.png " 
+                     style="right:350px;top:40px; width:300px;height:200px;opacity:0;" 
+                     data-_adminfourth-500="opacity:0 " 
+                     data-_adminfourth-600="opacity:0.5 " 
+                     data-_adminfourth-700="opacity:1; " 
+                     data-_adminfourth-740="opacity:0; " />
+                
+                <img class="content" 
+                     src="img/cloud_google.png " 
+                     style="right:680px;top:10px; width:300px;height:200px;opacity:0;" 
+                     data-_adminfourth-500="opacity:0 " 
+                     data-_adminfourth-600="opacity:0.5 " 
+                     data-_adminfourth-700="opacity:1; " 
+                     data-_adminfourth-740="opacity:0; " />
+            </div>
+
         </div>
     </div>
--->
 
 
-    <!--
-    <div class="wrapper" id="admin1">
-        <div class="content" style="top:0; left: 0; right: 0; bottom: 0; background-color:#96aeb0;">
-            <img style="bottom: 0; width : 60%; height : 90%;  margin-left: auto; margin-right: auto; display:block; " align="middle" src="img/admin1.png" data-0="opacity:0.4; transform: scaleX(0.4) scaleY(0.4);" data-200="opacity:0.7; transform: scaleX(0.7) scaleY(0.7);" data-400="opacity:1; transform: scaleX(1) scaleY(1);">
-
-            <img class="content" src="img/hr_paper.png" style="bottom:0px;;left:0px;" data-0="transform:translate(0em,0em);opacity : 1;" data-200="transform: translate(20em,-3em);opacity : 1;" data400="transform: translate(30em,-7em);opacity : 1;" data-500="transform: translate(30em,-7em);opacity : 0;">
-            <img class="content" src="img/hr_front.png" style="bottom:0px;;left:0px; opacity:0;" data-0="opacity:0;" data-499="opacity:0;" data-500="transform:translate(30em,-7em);opacity :1;">
-
-            <img class="content" src="img/cloud.png" style="right:0;top:0; width:400px;opacity:0;" data-500="opacity:0" data-600="opacity:0.5" data-700="opacity:1;" />
-        </div>
-    </div>
--->
+    <script src="/socket.io/socket.io.js "></script>
+    <script src="js/jquery-1.11.1.js "></script>
+    <script type="text/javascript " src="js/skrollr.min.js "></script>
 
 
-    <div class="wrapper" id="admin1">
-        <div class="content" style="top:0; left: 0; right: 0; bottom: 0; background-color:#96aeb0;">
-            <img style="left:0;right:0; bottom: 7em;  margin-left: auto; margin-right: auto; display:block; height:600px;width:600px;position:absolute; z-index:9999;" align="middle" src="img/admin1.png" data-_adminfirst-0="opacity:0.4; transform: scaleX(0.4) scaleY(0.4);" data-_adminfirst-200="opacity:0.7; transform: scaleX(0.7) scaleY(0.7);" data-_adminfirst-400="opacity:1; transform: scaleX(1) scaleY(1);" data-_adminfirst-740="opacity:0;">
-
-            <img class="content" src="img/hr_paper.png" style="bottom:0px;left:0px;z-index:9999;" data-_adminfirst-0="transform:translate(0em,0em);opacity : 1;" data-_adminfirst-200="transform: translate(20em,-3em);opacity : 1;" data-_adminfirst-400="transform: translate(30em,-7em);opacity :1;" data-_adminfirst-480="transform: translate(30em,-7em);opacity : 1;" data-_adminfirst-500="transform: translate(30em,-7em);opacity : 0;" data-_adminfirst-740="transform: translate(30em,-7em);opacity:0;">
-
-            <img class="content" src="img/hr_front.png" style="bottom:0px;;left:0px; opacity:0;z-index:9999;" data-_adminfirst-0="opacity:0;" data-_adminfirst-499="opacity:0;" data-_adminfirst-500="transform:translate(30em,-7em);opacity :1;" data-_adminfirst-740="transform:translate(30em,-7em);opacity:0;">
-
-            <img class="content" src="img/cloud_google.png" style="right:0;top:0; width:400px;opacity:0;z-index:9999;" data-_adminfirst-500="opacity:0" data-_adminfirst-600="opacity:0.5" data-_adminfirst-700="opacity:1;" data-_adminfirst-740="opacity:0;" />
-        </div>
-    </div>
-
-
-
-
-
-    <div class="wrapper" id="admin2">
-        <div class="content" style="top:0; left: 0; right: 0; bottom: 0; background-color:#96aeb0;">
-            <img style="left:0;right:0; bottom: 7em; margin-left: auto; margin-right: auto; display:block; height:500px;width:400px;position:absolute; opacity:0;z-index:500;" align="middle" src="img/admin2.png" data-_adminsecond-0="opacity:0;" data-_adminsecond-0="opacity:0.1; transform: scaleX(0.4) scaleY(0.4);" data-_adminsecond-200="opacity:0.7; transform: scaleX(0.7) scaleY(0.7);" data-_adminsecond-400="opacity:1; transform: scaleX(1) scaleY(1);">
-
-
-            <img class="content" src="img/hr_paper.png" style="bottom:0px;left:0px;z-index:500;" data-_adminsecond-0="opacity:0;" data-_adminsecond-0="transform:translate(0em,0em);opacity : 1;" data-_adminsecond-200="transform: translate(20em,-3em);opacity : 1;" data-_adminsecond-400="transform: translate(30em,-7em);opacity : 1;" data-_adminsecond-500="transform: translate(30em,-7em);opacity : 0;">
-            <img class="content" src="img/hr_front.png" style="bottom:0px;;left:0px; opacity:0;z-index:500;" data-_adminsecond-0="opacity:0;" data-_adminsecond-0="opacity:0;" data-_adminsecond-499="opacity:0;" data-_adminsecond-500="transform:translate(30em,-7em);opacity :1;">
-
-            <img class="content" src="img/cloud_amazon.png" style="right:0;top:0; width:400px;opacity:0;z-index:500;" data-_adminsecond-0="opacity:0;" data-_adminsecond-500="opacity:0" data-_adminsecond-600="opacity:0.5" data-_adminsecond-700="opacity:1;" />
-        </div>
-    </div>
-
-
-
-
-
-    <!--
-<div class="wrapper" id="admin2">
-    <div class="content" style="top:0; left: 0; right: 0; bottom: 0; background-color:#96aeb0;">
-        <img style="bottom: 0; width : 60%; height : 90%;  margin-left: auto; margin-right: auto; display:block; " align="middle" src="img/admin2.png">
-    </div>
-</div>
--->
-
-    <!--
-<div class="wrapper" id="admin3">
-    <div class="content" style="top:0; left: 0; right: 0; bottom: 0; background-color:#96aeb0;">
-        <img style="bottom: 0; width : 60%; height : 90%;  margin-left: auto; margin-right: auto; display:block; " align="middle" src="img/admin2.png">
-    </div>
-</div>
--->
-
-    <script src="/socket.io/socket.io.js"></script>
-    <script src="js/jquery-1.11.1.js"></script>
-    <script type="text/javascript" src="js/skrollr.min.js"></script>
-
-
-    <script type="text/javascript">
+    <script type="text/javascript ">
         skrollr.init({
             constants: {
                 adminfirst: 0,
-                adminsecond: 750
+                adminsecond: 750, 
+                adminthird:1500,
+                adminfourth:2250
             }
         });
 
 
-        var socket = io('http://172.27.0.140:3000/', {
-            query: 'id=1234'
-        });
-        //        $('form').submit(function (e) {
-        //            e.preventDefault();
-        //            socket.emit('chat message', $('#m').val());
-        //            console.log('sedning message');
-        //            $('#m').val('');
-        //            return false;
-        //        });
-
-        socket.on('UP', function (msg) {
-            //$('#messages').append($('<li>').text(msg));
-            window.scrollBy(0, -100);
-        });
-
-
-        socket.on('DOWN', function (msg) {
-            //$('#messages').append($('<li>').text(msg));
-            window.scrollBy(0, 100);
-        });
+//        var socket = io('http://172.27.0.140:3000/', {
+//            query: 'id=1234'
+//        });
+//
+//        socket.on('UP', function (msg) {
+//            window.scrollBy(0, -100);
+//        });
+//
+//
+//        socket.on('DOWN', function (msg) {
+//            window.scrollBy(0, 100);
+//        });
     </script>
 </body>
 

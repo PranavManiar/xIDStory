@@ -44,15 +44,18 @@
             <button id="DOWN" style="font-size:64px;" class="btn btn-success center-block fa fa-arrow-circle-down"> </button>
         </div>
 
+        <div style="align:center;">
+            <button id="FULL" style="font-size:64px;" class="btn btn-success center-block fa fa-arrow-circle-down">FULL </button>
+        </div>
     </div>
 
     <script src="/socket.io/socket.io.js"></script>
     <script src="js/jquery-1.11.1.js"></script>
     <script src="js/bootstrap.js"></script>
     <script>
-        var socket = io('', {
-            query: 'id=1234'
-        });
+        //        var socket = io('', {
+        //            query: 'id=1234'
+        //        });
 
         $('#UP').click(function (e) {
             socket.emit('UP', 'UP');
@@ -63,6 +66,42 @@
         $('#DOWN').click(function (e) {
             socket.emit('DOWN', 'DOWN');
         });
+
+
+        $('#FULL').click(function (e) {
+            //alert('calling full screen function');
+            //console.log('calling full screen function');
+            //toggleScreen();
+
+            socket.emit('DOWN', 'DOWN');
+            // setTimeout(anotherFunction(), 1000);
+        });
+
+
+        // setTimeout(toggleScreen(), 1000);
+
+
+        function toggleScreen() {
+            console.log('toggle full screen called');
+            if (!document.fullscreenElement && // alternative standard method
+                !document.mozFullScreenElement && !document.webkitFullscreenElement) { // current working methods
+                if (document.documentElement.requestFullscreen) {
+                    document.documentElement.requestFullscreen();
+                } else if (document.documentElement.mozRequestFullScreen) {
+                    document.documentElement.mozRequestFullScreen();
+                } else if (document.documentElement.webkitRequestFullscreen) {
+                    document.documentElement.webkitRequestFullscreen(Element.ALLOW_KEYBOARD_INPUT);
+                }
+            } else {
+                if (document.cancelFullScreen) {
+                    document.cancelFullScreen();
+                } else if (document.mozCancelFullScreen) {
+                    document.mozCancelFullScreen();
+                } else if (document.webkitCancelFullScreen) {
+                    document.webkitCancelFullScreen();
+                }
+            }
+        }
     </script>
 </body>
 
